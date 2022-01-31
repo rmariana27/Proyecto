@@ -1,0 +1,51 @@
+<div class="container p-4">
+
+<div>
+<h1 style="text-align: center; font-size:35px;">
+    Formulario de Consulta
+</h1>
+<hr>
+<div class="row">
+<form action="/api/consulta" method="post">
+    
+    <div class="mb-2">
+        <input class="form-control" type="text" name="nombre" placeholder="Nombre" value="{{nombre}}">
+    
+    </div>
+
+
+    <div class="mb-2">
+        <input class="form-control" type="text" name="apellido" placeholder="Apellido" value="{{apellido}}">
+    </div>
+
+    <div class="mb-2">
+        <input class="form-control" type="number" name="telefono" placeholder="Teléfono" value="{{telefono}}">
+    </div>
+
+    <div class="mb-2">
+        <input class="form-control" type="email" name="email" placeholder="Email" value="{{mail}}">
+    </div>
+
+    <div class="mb-2">
+        <input class="form-control" type="date" name="fechaEvento" placeholder="fechaEvento" value="{{fecha}}">
+    </div>
+
+    <div class="mb-2">
+        <input class="form-control" type="text" name="comentario" placeholder="Comentario" value="{{comentario}}">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+             <input type="submit" value="Enviar Consulta"  class="button btn-warning w-50 p-2">
+    </div>
+
+</form>
+</div>
+<div class="validadion">
+        <h5>
+        <p class="text-danger">
+            {{validacion}}
+        </p>
+        </h5>
+</div>
+</div>
+</div>

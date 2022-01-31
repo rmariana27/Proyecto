@@ -1,0 +1,32 @@
+<h3 style="text-align: center; font-size:35px;">Comentarios</h3>
+<div class="row m-4">
+    
+
+     <form action="/api/comentarios" method="post">
+         <div class="my-2">
+            <label for="cuenta">Nombre: </label> 
+            <input class="form-control" type="text"  placeholder="cuenta" name="cuenta" value="{{cuenta}}">
+         </div>
+
+         <div class="my-2">
+            <label for="detalle">Comentario: </label>
+            <input class="form-control" type="text"  placeholder="detalle" name="detalle" value="{{detalle}}"> 
+         </div>
+
+
+
+         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+             <input type="submit" value="Comentar"  class="button btn-warning w-50 p-2">
+         </div>
+
+         
+     </form>
+
+</div>
+<div class="validadion">
+        <h5>
+        <p class="text-danger">
+            {{validacion}}
+        </p>
+        </h5>
+</div>

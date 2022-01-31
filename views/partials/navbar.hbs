@@ -1,0 +1,43 @@
+<ul>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+      </div>
+      
+      <li class="nav-item dropdown" style="list-style: none;">
+          <a class="nav-link dropdown-toggle" style="color: black;" href="/comentarios" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comentarios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/listaComentarios">Ver Comentarios</a></li>
+            <li><a class="dropdown-item" href="/comentarios">Dejar Comentario</a></li>
+          </ul>
+      </li>
+
+      <li class="nav-item dropdown" style="list-style: none;">
+          <a class="nav-link dropdown-toggle" style="color: black;" href="/productos" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/listaProductos">Lista de Productos</a></li>
+            <li><a class="dropdown-item" href="/combos">Combos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/consulta">Consulta</a></li>
+            {{!-- <li><a class="dropdown-item" href="/pedido">Pedido</a></li> --}}
+          </ul>
+      </li>
+      
+      {{!-- <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/registro">Iniciar Sesión</a>
+        </li>
+      </ul> --}}
+    </div>
+  </div>
+</nav>
+</ul>
