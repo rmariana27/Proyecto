@@ -3,11 +3,11 @@ const knex = require('knex')({
 
     client: 'mysql2',
     connection: {
-        host: '127.0.0.1',
-        port: 3306,
-        user: 'root',
-        password: '#Nana2021',
-        database: 'dolcebanana'
+        host: 'ec2-54-157-15-228.compute-1.amazonaws.com',
+        port: 5432,
+        user: 'bfafmwumtlsssl',
+        password: 'd23527f0a7d0bbe4af0ca6ae996f715b020c60b411ba32d84f1b995def6576f1',
+        database: 'd73hge7s1flh8p'
     },
 
     pool: { min: 0, max: 8 }
